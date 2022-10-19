@@ -1,18 +1,8 @@
-![cover](https://cotenfrontend.pl/img/cover.png)
+![image](./logogh.png)
 
-# WTF Webpack Starter Kit 
+# WATERAPP
 
-Simple toolkit for your static websites development.
+The application counts how many glasses of water you have drunk per day.
 
-## How to use it?
-
-Click on `Use this template` button to generate a new repository based on this starter kit. After that clone it to your computer, go to the project directory in console and type `npm install`.
-
-## Available scripts
-
-`npm run start` - runs development mode
-
-`npm run build` - runs build process for production
-
-`npm run publish` - runs build process and publish the page using `gh-pages` branch
+*Drinking water can be fun. Test the application with us !*
 
