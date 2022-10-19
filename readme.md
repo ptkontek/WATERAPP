@@ -1,4 +1,4 @@
-![image](./logogh.png)
+![image](./logo.png)
 
 # WATERAPP
 
