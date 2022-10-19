@@ -33,22 +33,5 @@ remove.addEventListener("click", () => {
   localStorage.setItem(key, currentNumber);
 });
 
-
-const myResult1 = localStorage.getItem(key);
-console.log(JSON.parse(myResult1));
-const myNewObiect = JSON.parse(myResult1);
-console.log(myNewObiect);
-
-// console.log(key);
-// console.log(localStorage.getItem(key));
-
-
-// //można modyfikowac jak obiekt
-// 
-// myNewObiect.surname = "kontek";
-// console.log(myNewObiect);
-
-
-
 const result = document.querySelector(".result--js");
-result.innerHTML = `W dniu ${key} wypiłeś ${currentNumber} szklanek wody.`;
+result.innerHTML = `On ${key} you drank ${currentNumber} glasses of water.`;
