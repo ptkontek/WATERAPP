@@ -3,6 +3,16 @@
 @import "_variables";
 @import "modules/hello.scss";
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
   font-family: "Economica", sans-serif;
   background: $watapp;
@@ -15,7 +25,7 @@ body {
 
 .hello {
   &__link {
-    color: white;
+    color: rgb(18, 16, 124);
     text-decoration: none;
     font-size: 30px;
     display: flex;
@@ -24,33 +34,52 @@ body {
   }
 }
 
+.back {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  color: rgb(18, 16, 124);
+  text-decoration: none;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.result{
+  margin-top: 50px;
+  font-size: 20px;
+}
+
 .header {
   &__title {
     font-size: 55px;
     text-align: center;
     color: rgb(18, 16, 124);
-    margin-bottom: 62px;
+    margin-bottom: 50px;
+    margin-top: 20px;
   }
 }
 
 .game {
-  position: relative;
   &__glass {
+    width: 280px;
+    height: 280px;
+    background: url("../assets/img/glass.svg");
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   &__number {
-    position: absolute;
-    top: 26%;
-    left: 46%;
     font-size: 80px;
     color: rgb(18, 16, 124);
   }
   &__buttons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
+    display: block;
+    margin: auto;
+
     &--add {
-      margin-top: 48px;
+      margin-top: 42px;
       width: 216px;
       height: 47px;
       font-size: 22px;
@@ -58,29 +87,25 @@ body {
       box-shadow: 0px 6px 6px rgb(255, 255, 255, 0.25);
       border-radius: 10px;
       border: none;
-      &:focus{
+      cursor: pointer;
+      &:focus {
         opacity: 0.9;
       }
     }
     &--remove {
-      margin-top: 37px;
+      margin-top: 32px;
       width: 184px;
       height: 23px;
       font-size: 18px;
       background: $watapp;
-      color:white;
+      color: white;
       box-shadow: 0px 5px 5px rgb(255, 255, 255, 0.25);
       border: none;
-
+      cursor: pointer;
+      &:focus {
+        background: rgb(255, 255, 255, 0.05);
+      }
     }
   }
-  &__back{
-    margin-top: 80px;
-    color: rgb(18, 16, 124);
-    text-decoration: none;
-    font-size: 22px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
 }
+

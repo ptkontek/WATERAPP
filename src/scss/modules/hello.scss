@@ -30,7 +30,7 @@
     will-change: transform;
     width: 200px;
     height: 200px;
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(18, 16, 124, 0.3);
     border-radius: 50%;
     animation: circles 20s ease-in infinite;
     &::after {
@@ -40,7 +40,7 @@
       will-change: transform;
       width: 200px;
       height: 200px;
-      background: rgba(0, 0, 0, 0.1);
+      background: rgba(18, 16, 124, 0.3);
       border-radius: 50%;
       content: "";
       display: block;
@@ -54,7 +54,7 @@
       will-change: transform;
       width: 200px;
       height: 200px;
-      background: rgba(0, 0, 0, 0.1);
+      background: rgba(18, 16, 124, 0.3);
       border-radius: 50%;
       content: "";
       display: block;
