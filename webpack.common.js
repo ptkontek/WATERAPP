@@ -65,9 +65,7 @@ module.exports = {
         {
           from: "public",
           globOptions: {
-            ignore: [
-              '**/*.DS_Store'
-            ],
+            ignore: ["**/*.DS_Store"],
           },
         },
       ],
@@ -77,6 +75,12 @@ module.exports = {
       inject: true,
       chunks: ["index"],
       filename: "index.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/game.html",
+      inject: true,
+      chunks: ["index"],
+      filename: "game.html",
     }),
   ],
 };

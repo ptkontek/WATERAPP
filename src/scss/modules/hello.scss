@@ -21,15 +21,15 @@
   z-index: 0;
   &__logo {
     position: relative;
-    z-index: 2020;
+    z-index: 1;
   }
   &__circles {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 30%;
+    left: 51%;
     will-change: transform;
-    width: 3000px;
-    height: 3000px;
+    width: 200px;
+    height: 200px;
     background: rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     animation: circles 20s ease-in infinite;
@@ -38,8 +38,8 @@
       top: 50%;
       left: 50%;
       will-change: transform;
-      width: 220px;
-      height: 220px;
+      width: 200px;
+      height: 200px;
       background: rgba(0, 0, 0, 0.1);
       border-radius: 50%;
       content: "";
@@ -52,14 +52,14 @@
       top: 50%;
       left: 50%;
       will-change: transform;
-      width: 220px;
-      height: 220px;
+      width: 200px;
+      height: 200px;
       background: rgba(0, 0, 0, 0.1);
       border-radius: 50%;
       content: "";
       display: block;
       z-index: 1;
-      animation: circles 20s ease-in infinite;
+      animation: circles 10s ease-in infinite;
     }
   }
 }

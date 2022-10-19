@@ -1,13 +1,86 @@
 @import "~normalize.css";
-
+@import url("https://fonts.googleapis.com/css2?family=Economica:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 @import "_variables";
 @import "modules/hello.scss";
 
 body {
-  background: $wtf;
+  font-family: "Economica", sans-serif;
+  background: $watapp;
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+}
+
+.hello {
+  &__link {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.header {
+  &__title {
+    font-size: 55px;
+    text-align: center;
+    color: rgb(18, 16, 124);
+    margin-bottom: 62px;
+  }
+}
+
+.game {
+  position: relative;
+  &__glass {
+  }
+  &__number {
+    position: absolute;
+    top: 26%;
+    left: 46%;
+    font-size: 80px;
+    color: rgb(18, 16, 124);
+  }
+  &__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    &--add {
+      margin-top: 48px;
+      width: 216px;
+      height: 47px;
+      font-size: 22px;
+      background: #ffffff;
+      box-shadow: 0px 6px 6px rgb(255, 255, 255, 0.25);
+      border-radius: 10px;
+      border: none;
+      &:focus{
+        opacity: 0.9;
+      }
+    }
+    &--remove {
+      margin-top: 37px;
+      width: 184px;
+      height: 23px;
+      font-size: 18px;
+      background: $watapp;
+      color:white;
+      box-shadow: 0px 5px 5px rgb(255, 255, 255, 0.25);
+      border: none;
+
+    }
+  }
+  &__back{
+    margin-top: 80px;
+    color: rgb(18, 16, 124);
+    text-decoration: none;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
